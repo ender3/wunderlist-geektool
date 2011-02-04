@@ -16,4 +16,4 @@ Notes will be displayed, if present, and are styled with `ESCAPE_NOTE_MARKUP`
 ## How to Use in geektool
 Just make a new geeklet, and type the path and name of the `command`
 
-The styles will work best (in particular the star) if you use a font that has the full unicode char set for your geektool display. 
+The styles will work best (in particular the star) if you use a font that has the full unicode char set for your geektool display (I simply use Helvetica.). 
