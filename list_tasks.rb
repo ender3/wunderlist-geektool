@@ -8,6 +8,15 @@
 # ##########################################
 
 require 'sqlite3'
+# ##########################################
+# If you are getting errors on the above line
+# then you do not have sqlite3 installed correctly
+# no matter what gem is telling you. You probably have
+# more than one version of ruby installed and
+# gem is pointing to a different one than geeltool.
+# see the following page for details:
+# http://stackoverflow.com/questions/2797020/ruby-gem-not-found-although-it-is-installed
+# ###########################################
 
 db = SQLite3::Database.new( "/Users/<<your username here>>/Library/Application Support/Titanium/appdata/com.wunderkinder.wunderlist/wunderlist.db" )
 
