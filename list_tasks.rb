@@ -66,7 +66,7 @@ db.execute("select id, name, position from lists where deleted = '0' order by po
         puts taskToOutput
         
         # if there is a note, print it in italics
-        if (!task['note'].nil?) then
+        if (!task['note'].nil? && task['note'].length > 0) then
           puts INDENT + INDENT + ESCAPE_NOTE_MARKUP + task['note'] + ESCAPE_CANCEL 
         end # end if (is there a task note)
     end # end do |task| loop
