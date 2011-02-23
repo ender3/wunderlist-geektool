@@ -32,7 +32,7 @@ INDENT = "     "
 
 db.execute("select id, name, position from lists where deleted = '0' order by position") do |list|
     printedHeader = false
-    db.execute("select id, date, name, note, important, position from tasks where deleted = 0 and done = 0 and list_id = ? order by date DESC, position", list['id']) do |task|
+    db.execute("select id, date, name, note, important, position from tasks where deleted = 0 and done = 0 and list_id = ? order by date DESC, important DESC, position", list['id']) do |task|
     
         # There is a task associated with this list, so print the header
         if (printedHeader == false) then
