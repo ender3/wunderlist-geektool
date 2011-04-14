@@ -3,7 +3,7 @@ Looks up the projects and tasks in your wunderlist.db, and exports them in a ANS
 
 **Requires** sqllite3 gem.
 
-`sudo install gem sqlite3`
+`sudo gem install sqlite3`
 
 If you have trouble with the install, there's about 100 web pages on how to troubleshoot it.
 
